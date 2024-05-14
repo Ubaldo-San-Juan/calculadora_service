@@ -17,22 +17,22 @@ import calculadora_ubaldo.Suma;
 public class ModeloCalculadora {
 
     public double suma(int num1, int num2) {
-        Calculadora objCalculadora = new Suma();
+        Calculadora objCalculadora = new Suma(num1, num2);
         return (objCalculadora.calcular());
     }
 
     public double resta(int num1, int num2) {
-        Calculadora objCalculadora = new Resta();
+        Calculadora objCalculadora = new Resta(num1, num2);
         return (objCalculadora.calcular());
     }
 
     public double multiplicacion(int num1, int num2) {
-        Calculadora objCalculadora = new Multiplicacion();
+        Calculadora objCalculadora = new Multiplicacion(num1, num2);
         return (objCalculadora.calcular());
     }
 
     public double division(int num1, int num2) {
-        Calculadora objCalculadora = new Division();
+        Calculadora objCalculadora = new Division(num1, num2);
         return (objCalculadora.calcular());
     }
 }
